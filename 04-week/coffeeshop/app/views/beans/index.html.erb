@@ -1,0 +1,14 @@
+<h1>Today's Beans</h1>
+
+<ul>
+	
+<% @beans.each do |b| %>
+	<li>
+		Name: <%= b.name %> - Roast: <%= b.roast %>
+		<%= link_to "Show", bean_path(b.id) %>
+	</li>
+	<% end %>
+
+</ul>
+
+<%= link_to "Make a new bean!", new_bean_path %>

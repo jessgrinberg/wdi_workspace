@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+	<body ng-controller="MainController as mainCtrl">
+
+
+		<header>
+			<h1>Angular Business Card Generator</h1>
+			
+		</header>
+
+		<div class="container">
+
+			<div class="settings-panel">
+
+				<ul>
+					<li>Name: <input type="text" ng-model="mainCtrl.person.name"></li>
+					<li>Occupation: <input type="text" ng-model="mainCtrl.person.occupation"></li>
+					<li>dob: <input type="text" ng-model="mainCtrl.person.dob"></li>
+					<li>emailAddress: <input type="text" ng-model="mainCtrl.person.emailAddress"></li>
+					<li>phoneNumber: <input type="text" ng-model="mainCtrl.person.phoneNumber"></li>
+					<li>color: <input type="color" ng-model="mainCtrl.person.businessCardColor"></li>
+
+
+
+				</ul>	
+
+				<div class="order">
+					<button ng-click="mainCtrl.toggleImage()">Remove logo</button><button ng-click="mainCtrl.orderNow()">Order now</button>
+				</div>	
+
+			</div>
+
+			<div class="business-card" style="background: {{mainCtrl.person.businessCardColor}}; lightgray; border-radius: 10px">
+				<div class="contents">
+				<img id="ga-logo" ng-show="mainCtrl.imageVisible" src="http://sanfrancisco.impacthub.net/wp-content/uploads/sites/100/2015/04/GA_logo.png">
+					<h1 id="name">{{mainCtrl.person.name}}</h1>
+					<hr>
+					<h3>{{mainCtrl.person.occupation}}</h3>
+					<h3>{{mainCtrl.person.dob}}</h3>
+					<h3>{{mainCtrl.person.emailAddress}}</h3>
+					<h3>{{mainCtrl.person.phoneNumber}}</h3>
+
+				</div>
+			</div>
+
+		</div>
+
+
+	</body>
+</html>

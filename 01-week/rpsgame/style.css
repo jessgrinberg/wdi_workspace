@@ -1,0 +1,21 @@
+h1{
+	text-align: center;
+	color: white;
+	}
+
+body {
+	background-image: url("http://uthmag.com/wp-content/uploads/2015/02/Rock_Paper_Scissors_by_smashmethod.jpg");
+	background-attachment:fixed;
+}
+#bt {
+/*	position: fixed;*/
+	text-align: center;
+}
+
+
+#rock_bt {
+	/*background-image: url(https://outdoordesignbylucas.files.wordpress.com/2011/01/1-10-11-triangular-rock.jpg); 
+	width:100px;
+	height:100px;*/
+
+}

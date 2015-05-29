@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="my-app" ng-controller="MainController as m" >
+    <h1>Class Roster</h1>
+    <ul>
+      <li ng-repeat="person in m.names">
+        {{ person }}
+      </li>
+    </ul>
+    <br>
+
+    <div style="color: red" ng-show="false">Angular is not rendering :-( </div>
+
+
+    <input type="text" ng-model="m.newName">
+    <button class="box" ng-click="m.addNames()">Add Name</button>
+
+  </body>
+</html>

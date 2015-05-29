@@ -1,0 +1,15 @@
+<h1>Welcome to the Bookstore</h1>
+
+	<ul>
+		<% @books.each do |b| %>
+			<li>
+				Name: <%= b.name %> - Author: <%= b.author %>
+			<%= link_to "More details", book_path(b.id) %>
+<!-- 			<%= link_to "Remove", book_path(b.id) %> -->
+			</li>
+		<%end%>
+	</ul>
+
+	<%= link_to "Sell a new book!", new_book_path %> 
+
+

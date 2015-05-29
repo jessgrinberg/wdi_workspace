@@ -1,0 +1,10 @@
+BODY {
+	margin: 20px;
+	background: rgb(0, 126, 228);
+	color: rgb(250, 250, 250);
+}
+.gist {
+	width: 49%;
+	float: left;
+	margin-right: 1%;
+}

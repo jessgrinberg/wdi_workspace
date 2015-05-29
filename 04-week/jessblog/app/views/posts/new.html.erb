@@ -1,0 +1,25 @@
+<h1>Adding new post</h1>
+
+<%= form_for @post do |x| %>
+	<div>
+		<%= x.label :name %>
+		<%= x.text_field :name %>
+	</div>
+
+	<div>
+		<%= x.label :title %>
+		<%= x.text_field :title %>
+	</div>
+
+	<div>
+		<%= x.label :content %>
+		<%= x.text_field :content %>
+	</div>
+
+
+	<%= x.submit "Add a new post!" %>
+
+
+<% end %>
+
+<%= link_to 'Back', posts_path %>

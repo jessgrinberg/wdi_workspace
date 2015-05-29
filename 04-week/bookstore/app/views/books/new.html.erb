@@ -1,0 +1,28 @@
+<h1>Sell a new Book</h1>
+
+<%= form_for @book do |hi| %>
+	<div>
+		<%= hi.label :name %>
+		<%= hi.text_field :name %>
+	</div>
+
+	<div>
+		<%= hi.label :author %>
+		<%= hi.text_field :author %>
+	</div>
+
+	<div>
+		<%= hi.label :year %>
+		<%= hi.text_field :year %>
+	</div>
+
+	<div>
+		<%= hi.label :price %>
+		<%= hi.text_field :price %>
+	</div>
+
+	<%= hi.submit "Sell a new book!" %>
+
+<% end %>
+
+<%= link_to "Back to Index", books_path %>

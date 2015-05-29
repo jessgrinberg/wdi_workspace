@@ -1,0 +1,18 @@
+.box{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 50px auto;
+	background: red;
+	-moz-transform: rotateX(22deg) rotateX(-52deg) rotateZ(0deg);
+	-webkit-transform: rotateX(22deg) rotateX(-52deg) rotateZ(0deg); /*repeat the -...- transform:...with any device u want it to be displayed on, but keep the original transform*/
+	transform: rotateX(22deg) rotateX(-52deg) rotateZ(0deg); /*allows to rotate, scale, move, skew...==> JUST CHANGE THE SHAPE OF SOMETHING*/
+	perspective: 100px;
+	
+}
+
+.box:hover{
+	transition: width 2s;
+	left: 400px;
+	transform: rotateZ(100deg);
+}

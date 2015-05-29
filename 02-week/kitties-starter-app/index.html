@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<title>Kitties App!</title>
+
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+<!-- Step 2 - create a module in main.js and use the ng-app directive to link it to body(or html)-->
+	<body ng-app="kittiesApp">
+<!-- Step 3 test angular is connected by doing{{2+2}}-->
+
+<!-- Step 4, create a controller and connect it to our module -->
+
+<!-- Step6, Attach our controller to our HTML -->
+
+	<div ng-controller="KittiesController as kittiesCtrl">
+
+<!-- Step 6.5, for kicks try showing the full array{{kittiesCtrl.kittiesList}}-->
+<!-- Step 7, ng-repeat(iterate) through kittiesCtrl.kittiesList -->
+
+<!-- 	Step 8, Put a filter on our ng-repeat div: stuff u want to filter | false-->
+
+<!-- This div will display all the false images-->  
+<div id="container">
+  <section class= "left-container">
+   <p>Kitties for adoption</p>
+    <div class= "dashed" ng-repeat="k in kittiesCtrl.kittiesList | filter: false">	
+		 <h2> My name is {{ k.catName }} </h2>
+		  <p>I am {{ k.monthOld }} month.</p>
+		  <p>I am a {{ k.gender }}</p>
+		  <img ng-src={{k.image}}>
+
+		  <p>Adopt?<input type="checkbox" ng-model="k.adopted"></p>
+		  I am adopted: {{k.adopted}}
+	</div>
+  </section>
+
+<!-- This div will display all the true images--> 
+  <section class= "right-container">
+  <p>At their forever homes</p>
+	<div  class= "dashed" ng-repeat="k in kittiesCtrl.kittiesList | filter: true">	
+		 <h2> My name is {{ k.catName }} </h2>
+		  <p>I am {{ k.monthOld }} month.</p>
+		  <p>I am a {{ k.gender }}</p>
+		  <img ng-src={{k.image}}>
+
+		  <p>Adopt?<input type="checkbox" ng-model="k.adopted"></p>
+		  I am adopted: {{k.adopted}}
+	</div>
+  
+
+ </div>   
+
+	
+</div>
+
+<!-- 	Step 1 link all of our JS files-->
+
+    		<!--Sourcing Angular-->		
+<script type="text/javascript" src="js/angular.min.js"></script>
+		<!-- Source in module -->
+<script type="text/javascript" src="js/main.js"></script>
+		<!-- Source in controller -->
+<script type="text/javascript" src="js/KittiesController.js"></script>
+
+	</body>
+</html>

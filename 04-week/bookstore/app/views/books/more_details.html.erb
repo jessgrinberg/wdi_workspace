@@ -1,0 +1,9 @@
+<h1><%= @book.name%> </h1>
+
+<p>
+This book written by <%= @book.author %> , has been rated best book in 
+<%= @book.year %> by The New York Times, you can purchase it at the Bookstore for the price of $ <%= @book.price %> USD. 
+	
+</p>
+
+<%= link_to "Back to index list", books_path %>

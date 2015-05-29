@@ -1,0 +1,77 @@
+body {
+	text-align: center;
+}
+
+.cube {
+	position: relative;
+	height: 200px;
+	width: 260px;
+	margin: 0 auto;
+	transition: all 3s;
+}
+
+.cube:hover {
+	position: relative;
+	height: 200px;
+	width: 260px;
+	margin: 0 auto;
+	/*transform: rotateX(180deg) rotateY(180deg) rotateX(180deg);*/
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 2em;
+	transition: all 2s;
+}
+
+#one {
+  width: 100px;
+  height: 107px;
+  border: 1px solid blue;
+  transform: rotateX(22deg) rotateY(-52deg) rotateZ(0deg);
+  top: 22px;
+  left: 123px;
+
+}
+
+
+#two {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  top: 9px;
+  left: 104px;
+}
+
+#three{
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  top: 40px;
+  left: 40px;
+}
+
+#four {
+  width: 102px;
+  height: 107px;
+  border: 1px solid blue;
+  transform: rotateX(22deg) rotateY(-52deg) rotateZ(0deg);
+  top: 21px;
+  left: 20px;
+}
+
+#five {
+  font-size: 4em;
+  width: 178px;
+  height: 77px;
+  border: 1px solid blue;
+  transform: rotateX(77deg) rotateY(-18deg) rotateZ(54deg);
+  top: 86px;
+  left: 36px;
+}

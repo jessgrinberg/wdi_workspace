@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Items</h1>
+
+<br>
+<%= link_to "Define stuff", items_path(stuff: "Is defined & something", show_all:"true") %> 
+
+
+<br>
+<!-- <h2>Stuff is  <%= params[:stuff]%> </h2> -->
+
+<h2>Stuff is  <%= @stuff %> </h2>
+
+<p>
+Stuff <%= @stuff_message %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Qty</th>
+      <th>Owner</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.qty %></td>
+       <!--  <td><%= item.user_id %></td> -->
+       <td><%= item.user.name if item.user %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>

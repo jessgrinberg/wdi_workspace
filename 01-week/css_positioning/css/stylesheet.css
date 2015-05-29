@@ -1,0 +1,40 @@
+body {
+}
+main {
+	width: 70%
+	margin: 0 auto;
+	position: relative;
+}
+.primary-image {
+	text-align: center;
+}
+ul {
+	 text-align: center;
+	 padding-left: 0;
+}
+h2 {
+	text-align: center;
+}
+li {
+	display: inline-block;
+	text-align: center;
+}
+.primary-content, .secondary-content {
+	  float: left;
+	  width: 50%;
+}
+
+/*.primary-content {
+	position: absolute;
+}
+
+.secondary-content {
+	position: absolute;
+	right: 0;
+}*/
+footer {
+	clear: both;
+	text-align: center;
+	
+}
+

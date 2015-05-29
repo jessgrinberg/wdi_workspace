@@ -1,0 +1,15 @@
+<h1>My first post</h1>
+<ul>	
+<% @posts.each do |whatever| %>
+	<li>
+		Name: <%= whatever.name %> 
+		Title: <%= whatever.title %> 
+		Content: <%= whatever.content %>
+		<%= link_to 'Show', whatever %>
+		<%= link_to 'Edit', edit_post_path(whatever) %>
+		<%= link_to 'Destroy', whatever, method: :delete, data: { confirm: 'Are you sure?' } %>
+	</li>
+	<% end %>
+</ul>
+
+<%= link_to 'New Post', new_post_path %> 

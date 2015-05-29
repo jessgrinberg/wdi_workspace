@@ -1,0 +1,112 @@
+nav {
+	background-color: black;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+
+ul.list li {
+	display: inline;
+}
+
+section	{
+	background-image: url("../images/bg_body.jpg");
+	background-repeat: repeat;
+}
+
+a {
+	display: inline-block;
+	padding: 20px;
+	color: lightgrey;
+	font-family: sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ul	{
+list-style-type: none;
+}
+
+li {
+	text-align: left;
+}
+
+article	{
+	float: left;
+	width: 30%;
+}
+
+.icon {
+	float: right;
+
+	
+}
+
+#quote {
+	float: right;
+}
+
+footer {
+	float: left;
+	background-color: black;
+	width: 100%;
+}
+
+span {
+	color: blue;
+}
+
+footer p {
+	font-size: 75%;
+	color: grey;
+}
+
+article	{
+	display: inline-block;
+	text-align: center;
+	width:30%;
+}
+.box1 {
+  	float:left;
+		width:200px;
+		padding-right:30px;
+		overflow:hidden;
+		margin-bottom:40px;
+}
+
+.box2 {
+	float: left;
+	width:200px;
+}
+
+.box3 {
+	float: right;
+	width:50px;
+
+}
+
+#copyright {
+	float: left;
+	width: 100%;
+	color: grey;
+	padding: 40px;
+}
+
+#theme {
+	float: right;
+	color: grey;
+	width: 30%;
+}
+
+footer ul li {
+	color: grey;
+}
+
+h4 {
+	color: lightgrey;
+}
+
+#all_footer {
+	width: 500px;
+}

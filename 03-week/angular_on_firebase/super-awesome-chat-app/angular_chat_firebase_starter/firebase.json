@@ -1,0 +1,9 @@
+{
+  "firebase": "jess-chat-awesome",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
